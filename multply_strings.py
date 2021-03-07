@@ -25,7 +25,7 @@ class Solution:
         i = 0
         total = 0
         while i <= n:
-            total += int(num[i]) * 10**(n-i)
+            total += (ord(num[i]) - 48) * 10**(n-i)
             i += 1
             
         return total
